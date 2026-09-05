@@ -1,6 +1,57 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OPEN-TAB</title>
+  </head>
   <body>
+    <div id="app">
+      
+      <div class="top-left-container">
+        <div id="calendar-widget" class="glass-panel glow-effect">
+          <div class="calendar-header" id="month-year"></div>
+          <div class="calendar-days-of-week">
+            <span>Su</span><span>Mo</span><span>Tu</span><span>We</span><span>Th</span><span>Fr</span><span>Sa</span>
+          </div>
+          <div id="calendar-grid" class="calendar-grid"></div>
+        </div>
+      </div>
 
+      <div class="top-right-container">
+        <div id="time-widget" class="glass-panel glow-effect">--:--</div>
+      </div>
+
+      <div class="bottom-right-container">
+        <a href="https://stardance.hackclub.com/@kai_lmao/projects" id="author-widget" class="glass-panel glow-effect" target="_blank">
+          -BY KAI
+        </a>
+      </div>
+
+      <div class="search-container">
+        <div class="fake-tab glass-panel glow-effect">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+          </svg>
+          <span>OPEN-TAB</span>
+        </div>
+
+        <form id="search-form">
+          <input type="text" id="search-input" class="glass-search glow-effect" placeholder="Search the web..." autocomplete="off">
+        </form>
+
+        <div class="shortcuts-container">
+          <a href="https://github.com" class="shortcut-item glass-panel glow-effect" target="_blank">GitHub</a>
+          <a href="https://www.youtube.com" class="shortcut-item glass-panel glow-effect" target="_blank">YouTube</a>
+          <a href="https://www.nasa.gov" class="shortcut-item glass-panel glow-effect" target="_blank">NASA</a>
+          <a href="https://www.reddit.com" class="shortcut-item glass-panel glow-effect" target="_blank">Reddit</a>
+        </div>
+      </div>
+
+      <a href="https://apod.nasa.gov/apod/astropix.html" id="nasa-widget" class="glass-panel bottom-panel glow-effect" target="_blank">
+        <p>Loading NASA transmission...</p>
+      </a>
+    </div>
+    <script type="module" src="/src/main.js"></script>
   </body>
 </html>
